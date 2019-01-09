@@ -30,16 +30,28 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 传递参数的三种方式：
 方式一
+```
 router：path: '/about/:topic'
+```
 this.$router.push({path:'/about/blog'})
+```
 this.topic = this.$route.params.topic
+```
 
 方式二
+```
 name: 'about'
+```
 this.$router.push({name: 'about', params: {topic: 'blog'}})
+```
 this.topic = this.$route.params.topic
+```
 
 方式三
+```
 path: '/about'
+```
 this.$router.push({path: '/about', query: {topic: 'blog'}})
+```
 this.topic = this.$route.query.topic
+```
