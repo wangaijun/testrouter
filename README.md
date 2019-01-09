@@ -32,9 +32,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 方式一
 ```
 router：path: '/about/:topic'
-```
 this.$router.push({path:'/about/blog'})
-```
 this.topic = this.$route.params.topic
 ```
 
